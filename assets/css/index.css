@@ -20,6 +20,7 @@ body {
     font-family: 'Raleway';
 }
 
+
 #about-name {
     width: 100%;
     height: 14%;
@@ -105,7 +106,10 @@ body {
 }
 
 #about hr {
+    border-color: rgba(200, 200, 200, 0.5);
     height: 0.5%;
+    margin-left: 10%;
+    margin-right: 10%;
 }
 
 #about-nav {
@@ -136,6 +140,50 @@ body {
 }
 
 #about ul li a:hover {
+    border: 1px solid white;
+    border-radius: 10px;
+    text-decoration: none;
+}
+
+
+#projects {
+    color: white;
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+    padding: 80px 10% 30px 10%;
+    font-family: 'Raleway';
+    background-color: rgba(20, 20, 20, 0.3);
+}
+
+#projects .row {
+    margin: 70px 8%;
+}
+
+#projects img {
+    width: 40vmin;
+    border-radius: 1vmin;
+    padding: 20px 0;
+}
+
+#projects h1 {
+    text-transform: uppercase;
+}
+
+#projects .row .text {
+    text-align: left;
+}
+
+#projects a {
+    color: white;
+    padding: 8px;
+    border: 1px solid rgba(0, 0, 0, 0);
+    border-radius: 10px;
+    transition: all 0.2s;
+}
+
+#projects a:hover {
+    color: white;
     border: 1px solid white;
     border-radius: 10px;
     text-decoration: none;
