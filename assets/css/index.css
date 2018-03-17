@@ -32,6 +32,12 @@ body div h1 {
     color: white;
 }
 
+#main-portfolio {
+    width: 100%;
+    height: 100%;
+    color: white;
+}
+
 @media (max-width: 767px)
 {
     #main-info, #main-skills, #main-portfolio, #main-hobbies {
@@ -253,8 +259,7 @@ body div h1 {
     padding: 0;
 }
 
-#cpu-tax-calc {
-    padding: 0;
+#cpu-tax-calc-info {
     background: url(../images/logo_cpu.png);
     background-size: contain;
     background-repeat: no-repeat;
@@ -262,8 +267,7 @@ body div h1 {
     background-color: purple;  
 }
 
-#connect-up {
-    padding: 0;
+#connect-up-info {
     background: url(../images/logo_connect.png);
     background-size: contain;
     background-repeat: no-repeat;
@@ -271,8 +275,7 @@ body div h1 {
     background-color: maroon;
 }
 
-#ejk-watch {
-    padding: 0;
+#ejk-watch-info {
     background: url(../images/logo_ejk.png);
     background-size: contain;
     background-repeat: no-repeat;
@@ -280,8 +283,7 @@ body div h1 {
     background-color: whitesmoke;
 }
 
-#envi-defenders {
-    padding: 0;
+#envi-defenders-info {
     background: url(../images/logo_envi.png);
     background-size: contain;
     background-repeat: no-repeat;
@@ -289,8 +291,7 @@ body div h1 {
     background-color: darkolivegreen;
 }
 
-#hungry-games {
-    padding: 0;
+#hungry-games-info {
     background: url(../images/logo_hungry.png);
     background-size: contain;
     background-repeat: no-repeat;
@@ -298,34 +299,28 @@ body div h1 {
     background-color: orange;
 }
 
-#grabeteh {
-    padding: 0;
+#grabeteh-info {
     background: url(../images/logo_grabeteh.png);
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
     background-color: violet;
 }
+
+#main-portfolio-row .row {
+    width: 100%;
+    margin: 0;
+}
+
 #connect-up-info,
-#cpu-tax-calc-info {
+#cpu-tax-calc-info,
+#ejk-watch-info,
+#envi-defenders-info,
+#hungry-games-info,
+#grabeteh-info {
     height: 100%;
     display: table;
-    padding: 0 3%;
-}
-#cpu-tax-calc-info {
-    display: none;
-}
-#ejk-watch-info {
-    display: none;
-}
-#envi-defenders-info {
-    display: none;
-}
-#hungry-games-info {
-    display: none;
-}
-#grabeteh-info {
-    display: none;
+    padding: 0;
 }
 
 #portfolio-list p {
