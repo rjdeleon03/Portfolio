@@ -215,12 +215,60 @@ body {
 #skills {
     padding-left: 20px;
     padding-right: 20px;
+    max-width: 1000px;
 }
 
-#skills .row.skilltable div {
-    padding: 20px;
-    filter: brightness(100%);
-    -webkit-filter: brightness(100%);
+#skills .row.skilltable .skillwrapper {
+    margin: 20px 0;
+    padding: 0;
+    text-align: left;
+}
+
+#skills .row.skilltable .skillwrapper .label {
+    margin: 0;
+    background-color: #3c3c3c;
+    text-align: center;
+    width: 30%;
+    float: left;
+}
+
+#skills .row.skilltable .skillwrapper .level {
+    margin: 0;
+    background-color: orange;
+    border-radius: 0 5px 5px 0;
+    text-align: center;
+    height: 100%;
+    width: 0%;
+    float: left;
+}
+
+#skills .row.skilltable .skillwrapper .level.w20 {
+    width: 14%;
+}
+#skills .row.skilltable .skillwrapper .level.w30 {
+    width: 21%;
+}
+#skills .row.skilltable .skillwrapper .level.w40 {
+    width: 28%;
+}
+#skills .row.skilltable .skillwrapper .level.w50 {
+    width: 35%;
+}
+#skills .row.skilltable .skillwrapper .level.w60 {
+    width: 42%;
+}
+#skills .row.skilltable .skillwrapper .level.w70 {
+    width: 49%;
+}
+#skills .row.skilltable .skillwrapper .level.w80 {
+    width: 56%;
+}
+
+#skills .row.skilltable .skillwrapper .padded-grid {
+    margin: 0 10px;
+    height: 100%;
+    background-color: rgba(30, 30, 30, 0.6);
+    border-radius: 0 5px 5px 0;
 }
 
 #skills .row.skilltable div img {
