@@ -42,7 +42,9 @@ body div h1 {
     #main-skills #experience,
     #main-portfolio #portfolio-info,
     #main-portfolio #portfolio-list {
+        min-height: 50%;
         height: 50%;
+        max-height: 50%;
     }
 }
 
@@ -310,7 +312,8 @@ body div h1 {
 #cpu-tax-calc-info {
     height: 100%;
     display: table;
-    padding: 0 3%;
+    overflow-y: scroll;
+    padding: 0 0 30px 0;
 }
 #cpu-tax-calc-info {
     display: none;
@@ -340,6 +343,12 @@ body div h1 {
     text-align: center;
 }
 
+#portfolio-list .portfolio-content-wrapper {
+    overflow-y: scroll;
+    max-height: 75%;
+    padding: 0 3% 0 calc(3% + 10px);
+}
+
 #portfolio-list h1 {
     display: table-cell;
     vertical-align: middle;
@@ -353,4 +362,20 @@ body div h1 {
 #portfolio-list img {
     width: 13em;
     box-shadow: 1px 1px 2px #333;
+}
+
+/* width */
+    width: 10px;
+}
+
+/* Track */
+    background: rgba(40, 40, 40, 0.2); 
+}
+
+/* Handle */
+    background: rgba(136, 136, 136, 0.2); 
+}
+
+/* Handle on hover */
+    background: #555;
 }
