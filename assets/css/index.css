@@ -308,26 +308,22 @@ body div h1 {
     background-position: center;
     background-color: violet;
 }
-#connect-up-info,
-#cpu-tax-calc-info {
+
+#connect-up-info {
     height: 100%;
     display: table;
     overflow-y: scroll;
     padding: 0 0 30px 0;
 }
-#cpu-tax-calc-info {
-    display: none;
-}
-#ejk-watch-info {
-    display: none;
-}
-#envi-defenders-info {
-    display: none;
-}
-#hungry-games-info {
-    display: none;
-}
+
+#cpu-tax-calc-info,
+#ejk-watch-info,
+#envi-defenders-info,
+#hungry-games-info,
 #grabeteh-info {
+    height: 100%;
+    overflow-y: scroll;
+    padding: 0 0 30px 0;
     display: none;
 }
 
@@ -365,17 +361,21 @@ body div h1 {
 }
 
 /* width */
+body ::-webkit-scrollbar {
     width: 10px;
 }
 
 /* Track */
+body ::-webkit-scrollbar-track {
     background: rgba(40, 40, 40, 0.2); 
 }
 
 /* Handle */
+body ::-webkit-scrollbar-thumb {
     background: rgba(136, 136, 136, 0.2); 
 }
 
 /* Handle on hover */
+body ::-webkit-scrollbar-thumb:hover {
     background: #555;
 }
