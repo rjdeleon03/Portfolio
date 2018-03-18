@@ -162,14 +162,19 @@ body {
 }
 
 #projects .row {
-    margin: 70px 8%;
+    margin: 20px 4%;
+}
+
+#projects .row .project-grid{
+    margin: 30px 0;
 }
 
 #projects img {
     width: 100%;
     max-width: 400px;
-    border-radius: 10px;
-    margin: 20px 0;
+    margin: 0;
+    border-radius: 10px 10px 0 0;
+    border-bottom: 1px solid white;
 }
 
 #skills h1,
@@ -181,9 +186,17 @@ body {
     font-weight: bold;
 }
 
+#projects .row .project-wrapper {
+    border: 1px solid white;
+    border-radius: 10px;
+    max-width: 400px;
+    margin: 0 auto;
+    height: 100%;
+}
+
 #projects .row .text {
     text-align: left;
-    padding: 20px 0;
+    padding: 20px 20px 30px 20px;
 }
 
 #projects a {
