@@ -398,11 +398,15 @@ body {
 .grid-item--width2 { width: 50%; }
 .grid-item--width3 { width: 75%; }
 .grid-item--height2 { height: 200px; }
-.grid-item--height3 { height: 300px; }
 
 @media (max-width: 991px) {
-
     #skills .skillwrapper.half {
         max-width: 100%;
+    }
+    .grid-item {
+        height: 75px;
+    }
+    .grid-item--height2 { 
+        height: 150px; 
     }
 }
