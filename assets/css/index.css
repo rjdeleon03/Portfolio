@@ -268,18 +268,9 @@ body {
 }
 
 #skills {
-    padding-left: 20px;
-    padding-right: 20px;
+    padding-top: 80px;
+    padding-bottom: 30px;
     max-width: 1000px;
-}
-
-#skills .skillwrapper {
-    max-width: 800px;
-    width: 80%;
-    border-radius: 3px;
-    margin: 0 auto;
-    padding: 0;
-    background-color: rgba(20, 20, 20, 0.3);
 }
 
 #skills .skillwrapper .level {
@@ -325,11 +316,6 @@ body {
     min-width: 180px;
 }
 
-#skills .skillwrapper .padded-grid {
-    margin: 0 10px;
-    height: 100%;
-}
-
 #skills .graph-line {
     height: 10px;
     border-left: 2px solid rgba(200, 200, 200, 0.4);
@@ -349,26 +335,33 @@ body {
     width: 80%;
 }
 
-/* ---- grid ---- */
-.grid {
-    width: calc(80% + 15px);
+#skills #skillcontainer {
+    margin: 50px auto;
+}
+
+#skills .skillwrapper {
+    margin: 0;
+    padding: 0;
+}
+
+#skills .skillwrapper.half {
+    max-width: 75%;
     margin: 0 auto;
 }
 
-  /* clear fix */
-  .grid:after {
+/* ---- grid ---- */
+.grid {
+    width: 100%;
+}
+
+/* clear fix */
+.grid:after {
     content: '';
     display: block;
     clear: both;
-  }
+}
   
 /* ---- .grid-item ---- */
-
-/* 5 columns, percentage width */
-.grid-item-first {
-    width: calc(25% - 15px);
-}
-
 .grid-item {
     float: left;
     height: 100px;
@@ -394,3 +387,11 @@ body {
 .grid-item--width2 { width: 50%; }
 .grid-item--width3 { width: 75%; }
 .grid-item--height2 { height: 200px; }
+.grid-item--height3 { height: 300px; }
+
+@media (max-width: 991px) {
+
+    #skills .skillwrapper.half {
+        max-width: 100%;
+    }
+}
