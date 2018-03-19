@@ -290,7 +290,10 @@ body {
     height: 100%;
     width: 100%;
     text-align: center;
-    border-radius: 3px;
+}
+
+#skills .skillwrapper .level:nth-of-type(2n) {
+    background-color: #ccc
 }
 
 #skills .skillwrapper .level.w20 {
@@ -345,3 +348,39 @@ body {
     border-bottom: 2px solid rgba(200, 200, 200, 0.4);
     width: 80%;
 }
+
+/* ---- grid ---- */
+.grid {
+    width: calc(80% + 15px);
+    margin: 0 auto;
+}
+
+  /* clear fix */
+  .grid:after {
+    content: '';
+    display: block;
+    clear: both;
+  }
+  
+  /* ---- .grid-item ---- */
+  
+  /* 5 columns, percentage width */
+  .grid-item-first {
+    width: calc(25% - 15px);
+  }
+  .grid-item {
+    width: 23.5%;
+  }
+  
+  .grid-item {
+    float: left;
+    height: 100px;
+    border: 1px solid white;
+    border-radius: 10px;
+  }
+  
+  .gutter-sizer { width: 2%; }
+  
+  .grid-item--width2 { width: 49%; }
+  .grid-item--width3 { width: 74.5%; }
+  .grid-item--height2 { height: calc(200px + 2%); }
