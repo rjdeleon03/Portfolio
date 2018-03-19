@@ -377,10 +377,14 @@ body {
     display: table;
 }
 
-.grid-content h3 {
+.grid-content h1 {
     height: 100%;
     display: table-cell;
     vertical-align: middle;
+}
+
+.grid-content img {
+    height: 5vh;
 }
   
 .gutter-sizer { width: 0%; }  
