@@ -18,8 +18,8 @@
     <!-- jQuery -->
     <script type="text/javascript" src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
     
-    <!-- Packery -->
-    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/packery/2.1.1/packery.pkgd.min.js"></script>
+    <!-- RaphaelJS -->
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/raphael/2.2.7/raphael.min.js"></script>
 
     <!-- Bootstrap -->
     <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
@@ -127,50 +127,49 @@
     
     <div id="skills">
         <h1>Skills</h1>
-        <div class="skillwrapper">
-            <div class="level w70">HTML</div>
-            <div class="level w50">CSS</div>
-            <div class="level w30">JavaScript</div>
-            <div class="level w30">jQuery</div>
-            <div class="level w30">Angular</div>
-            <div class="level w50">Android / Java</div>
-            <div class="level w30">Unity</div>
-            <div class="level w40">Linux / C++</div>
-            <div class="level w70">Windows / C#</div>
+        <div id="diagram"></div>
+            <div class="get">
+                <div class="arc">
+                    <span class="text">jQuery</span>
+                    <input type="hidden" class="percent" value="95" />
+                    <input type="hidden" class="color" value="#97BE0D" />
+                </div>
+                <div class="arc">
+
+                    <span class="text">CSS3</span>
+                    <input type="hidden" class="percent" value="90" />
+                    <input type="hidden" class="color" value="#D84F5F" />
+                </div>
+                <div class="arc">
+                    <span class="text">HTML5</span>
+                    <input type="hidden" class="percent" value="80" />
+                    <input type="hidden" class="color" value="#88B8E6" />
+
+                </div>
+                <div class="arc">
+                    <span class="text">PHP</span>
+                    <input type="hidden" class="percent" value="53" />
+                    <input type="hidden" class="color" value="#BEDBE9" />
+                </div>
+                <div class="arc">
+                    <span class="text">MySQL</span>
+                    <input type="hidden" class="percent" value="45" />
+                    <input type="hidden" class="color" value="#EDEBEE" />
+                </div>
+            </div>
+            <div class="skillwrapper">
+                <div class="level w70">HTML</div>
+                <div class="level w50">CSS</div>
+                <div class="level w30">JavaScript</div>
+                <div class="level w30">jQuery</div>
+                <div class="level w30">Angular</div>
+                <div class="level w50">Android / Java</div>
+                <div class="level w30">Unity</div>
+                <div class="level w40">Linux / C++</div>
+                <div class="level w70">Windows / C#</div>
+            </div>
+            <div class="graph-line"></div>
         </div>
-        <div class="graph-line"></div>
-
-        
-<div class="grid">
-    <div class="gutter-sizer"></div>
-    <div class="grid-item grid-item--width3"></div>
-    <div class="grid-item"></div>
-    <div class="grid-item"></div>
-    <div class="grid-item grid-item--width2"></div>
-    <div class="grid-item grid-item--height2"></div>
-    <div class="grid-item grid-item--width2"></div>
-    <div class="grid-item"></div>
-    <div class="grid-item grid-item--width3"></div>
-    <div class="grid-item"></div>
-    <div class="grid-item grid-item--width2"></div>
-    <div class="grid-item grid-item--width2"></div>
-
-
-
-    <!-- <div class="grid-item grid-item--height2"></div>
-    <div class="grid-item"></div>
-    <div class="grid-item"></div>
-    <div class="grid-item grid-item--height2"></div>
-    <div class="grid-item"></div>
-    <div class="grid-item grid-item--width2"></div>
-    <div class="grid-item grid-item--height2"></div>
-    <div class="grid-item grid-item--width2"></div>
-    <div class="grid-item"></div>
-    <div class="grid-item grid-item--height2"></div>
-    <div class="grid-item"></div>
-    <div class="grid-item"></div> -->
-  </div>
-  
     </div>
 
     <!-- Custom JS -->

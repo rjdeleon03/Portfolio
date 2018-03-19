@@ -349,38 +349,11 @@ body {
     width: 80%;
 }
 
-/* ---- grid ---- */
-.grid {
-    width: calc(80% + 15px);
-    margin: 0 auto;
+.get {
+	display:none;
 }
 
-  /* clear fix */
-  .grid:after {
-    content: '';
-    display: block;
-    clear: both;
-  }
-  
-  /* ---- .grid-item ---- */
-  
-  /* 5 columns, percentage width */
-  .grid-item-first {
-    width: calc(25% - 15px);
-  }
-  .grid-item {
-    width: 23.5%;
-  }
-  
-  .grid-item {
-    float: left;
-    height: 100px;
-    border: 1px solid white;
-    border-radius: 10px;
-  }
-  
-  .gutter-sizer { width: 2%; }
-  
-  .grid-item--width2 { width: 49%; }
-  .grid-item--width3 { width: 74.5%; }
-  .grid-item--height2 { height: calc(200px + 2%); }
+#diagram {
+	width:300px;
+	height:300px;
+}
