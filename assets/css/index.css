@@ -375,6 +375,13 @@ body {
     width: calc(100% - 6px);
     height: calc(100% - 6px);
     display: table;
+    transition: background-color 0.2s;
+    -webkit-transition: background-color 0.2s;
+    -moz-transition: background-color 0.2s;
+}
+
+.grid-item .grid-content.selectable:hover {
+    background-color: rgba(20, 20, 20, 0.3);
 }
 
 .grid-content h1 {
