@@ -34,3 +34,9 @@ $(window).scroll(function(e){
       isPositionFixed = false;
     } 
 });
+
+var skillColors = ["bg-pink", "bg-aqua", "bg-blue", "bg-yellow", "bg-s-pink", "bg-s-aqua", "bg-s-blue", "bg-s-yellow"];
+
+// $(".selectable").each(function(index, object) {
+//     $(object).addClass(skillColors[Math.floor(Math.random() * 8)]);
+// });
