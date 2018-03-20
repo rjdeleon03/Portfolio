@@ -13,23 +13,26 @@ $(".grid").packery({
 });
 
 var $navBarTop = $("#about-nav").position().top;
+var isPositionFixed = ($("#about-nav").css("position") == "fixed");
 
 // navbar behavior
 $(window).scroll(function(e){ 
     var $el = $("#about-nav"); 
-    var isPositionFixed = ($el.css("position") == "fixed");
-    console.log($(this).scrollTop() + " --- " + $("#about-nav").position().top);
     if ($(this).scrollTop() >= $navBarTop && !isPositionFixed){ 
+        console.log($(this).scrollTop() + " --- " + $navBarTop);
         $("#about-nav").animate({
-            backgroundColor: "#3c3c3c",
-        });
-      $("#about-nav").css({"position": "fixed", "top": "0px", "left": "0px"}); 
+            backgroundColor: "rgba(60, 60, 60, 0.9)",
+        }, 300);
+      $("#about-nav").css({"position": "fixed", "top": "0px", "left": "0px", "right": "0px"}); 
+      isPositionFixed = true;
     }
-    if ($(this).scrollTop() < $navBarTop && isPositionFixed)
+    if ($(this).scrollTop() < $navBarTop && $(this).scrollTop() > 0 && isPositionFixed)
     {
+        console.log($(this).scrollTop() + " xxx " + $navBarTop);
         $("#about-nav").animate({
             backgroundColor: "rgba(0, 0, 0, 0)",
-        });
+        }, 200);
       $("#about-nav").css({"position": "static", "top": "0px", "left": "0px"}); 
+      isPositionFixed = false;
     } 
 });

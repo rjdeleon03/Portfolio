@@ -60,6 +60,7 @@ body {
 
     #about-text {
         padding: 0 10% !important;
+        font-size: 3.3vmin; 
     }
 
     #about h1 {
@@ -68,10 +69,6 @@ body {
 
     #about-contact a {
         font-size: 5vmin !important; 
-    }
-
-    #about-text {
-        font-size: 3.3vmin; 
     }
 
     #about img {
@@ -86,6 +83,8 @@ body {
     
     #about-text {
         padding: 0 5% !important;
+        height: 28%;
+        margin: 0 auto;
     }
 
     body {
@@ -95,11 +94,6 @@ body {
     #about p {
         margin-bottom: 0.5rem;
         line-height: 1.1rem !important;
-    }
-    
-    #about-text {
-        height: 28%;
-        margin: 2px 1%;
     }
     
     #about img {
@@ -171,8 +165,15 @@ body {
     width: 100%;
     height: 5%;
     display: table;
-    /* position: absolute;
-    left: 0%; */
+}
+
+#about-nav #ul-wrapper {
+    width: 100%;
+    height: 100%;
+    max-width: 800px;
+    min-height: 40px;
+    margin: 0 auto;
+    display: table;
 }
 
 #about ul {
