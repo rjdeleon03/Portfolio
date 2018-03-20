@@ -19,7 +19,6 @@ var isPositionFixed = ($("#about-nav").css("position") == "fixed");
 $(window).scroll(function(e){ 
     var $el = $("#about-nav"); 
     if ($(this).scrollTop() >= $navBarTop && !isPositionFixed){ 
-        console.log($(this).scrollTop() + " --- " + $navBarTop);
         $("#about-nav").animate({
             backgroundColor: "rgba(60, 60, 60, 0.9)",
         }, 300);
@@ -28,7 +27,6 @@ $(window).scroll(function(e){
     }
     if ($(this).scrollTop() < $navBarTop && $(this).scrollTop() > 0 && isPositionFixed)
     {
-        console.log($(this).scrollTop() + " xxx " + $navBarTop);
         $("#about-nav").animate({
             backgroundColor: "rgba(0, 0, 0, 0)",
         }, 200);
