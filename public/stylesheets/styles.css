@@ -1,5 +1,5 @@
-html, html body {
-    height: 100vh;
+html, body {
+    height: 100vh !important;
 }
 
 html body {    
