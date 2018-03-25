@@ -2,7 +2,7 @@ var express = require("express"),
     app     = express();
 
 // var port = 3000;
-var port = process.env.PORT;
+var port = process.env.PORT || 8080;
 
 // Render ejs files by default
 app.set("view engine", "ejs");
