@@ -36,6 +36,10 @@ html body {
     #about h1 {        
         text-shadow: 1px 2px 8px black;
     }
+
+    #about .ui.divider {
+        margin: 5px auto !important;
+    }
 }
 
 @media(max-width: 500px) {
@@ -114,9 +118,10 @@ html body {
     display: none;
 }
 
-hr {
+#about .ui.divider {
     min-width: 250px;
     max-width: 500px;
     width: 80%;
-    height: 1px;
+    margin: 10px auto;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.6);
 }
