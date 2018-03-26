@@ -115,6 +115,18 @@ html body {
     border: 1px solid #fff;
 }
 
+#about-nav-menu {
+    z-index: 1;
+}
+
+#about-nav-menu.sticky {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    padding: 4px 0;
+}
+
 #about-nav a {    
     font-family: 'Raleway';
 }
@@ -143,7 +155,7 @@ html body {
 #projects, 
 #skills,
 #contact {
-    padding: 40px 0;
+    padding: 50px 0;
  }
 
 #projects h1,
@@ -175,6 +187,13 @@ html body {
  * ==================== */
 
 #projects {
+    background: url(https://images.unsplash.com/photo-1497493292307-31c376b6e479?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=428468d8a8b3842450b4f54a173f2622&auto=format&fit=crop&w=1351&q=80);
+    background-position: center;
+    background-color: rgba(0, 0, 0, 0.85);
+    background-blend-mode: multiply;
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
 }
  
 .project-wrapper {

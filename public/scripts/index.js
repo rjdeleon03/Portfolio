@@ -14,37 +14,42 @@ $("#a-contact").on("click", function() {
     $("html, body").animate({ scrollTop: $("#contact").offset().top }, 1000);
 });
 
-$(".grid").packery({
-    itemSelector: ".grid-item",
-    gutter: ".gutter-sizer",
-    percentPosition: true
-});
-
-var $navBarTop = $("#about-nav").position().top;
+var $navBarTop = $("#about-nav").offset().top;
 var isPositionFixed = ($("#about-nav").css("position") == "fixed");
 
-// navbar behavior
+// Navbar behavior on scroll
 $(window).scroll(function(e){ 
-    var $el = $("#about-nav"); 
+    repositionNavbar();
+});
+
+// Navbar behavior on resize
+$(window).resize(function(e) {
+    $navBarTop = $("#about-nav").offset().top;
+    repositionNavbar();
+});
+
+// Navbar behavior on orientation change
+$(window).on("orientationchange", function(e) {
+    $navBarTop = $("#about-nav").offset().top;
+    repositionNavbar();
+});
+
+// Reposition navbar based on position 
+function repositionNavbar() {
+    var $el = $("#about-nav");     
     if ($(this).scrollTop() >= $navBarTop && !isPositionFixed){ 
-        $("#about-nav").animate({
-            backgroundColor: "rgba(60, 60, 60, 0.9)",
+        $("#about-nav-menu").animate({
+            backgroundColor: "rgba(60, 60, 60, 0.95)",
         }, 300);
-      $("#about-nav").css({"position": "fixed", "top": "0px", "left": "0px", "right": "0px"}); 
-      isPositionFixed = true;
+        $("#about-nav-menu").addClass("sticky");
+        isPositionFixed = true;
     }
     if ($(this).scrollTop() < $navBarTop && $(this).scrollTop() > 0 && isPositionFixed)
     {
-        $("#about-nav").animate({
+        $("#about-nav-menu").animate({
             backgroundColor: "rgba(0, 0, 0, 0)",
         }, 200);
-      $("#about-nav").css({"position": "static", "top": "0px", "left": "0px"}); 
-      isPositionFixed = false;
+        $("#about-nav-menu").removeClass("sticky");
+        isPositionFixed = false;
     } 
-});
-
-var skillColors = ["bg-pink", "bg-aqua", "bg-blue", "bg-yellow", "bg-s-pink", "bg-s-aqua", "bg-s-blue", "bg-s-yellow"];
-
-// $(".selectable").each(function(index, object) {
-//     $(object).addClass(skillColors[Math.floor(Math.random() * 8)]);
-// });
+}
