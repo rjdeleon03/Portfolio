@@ -15,6 +15,10 @@ html body {
     font-size: 1em;
 }
 
+.hidden {    
+    display: none !important;
+}
+
 #skills,
 #contact {    
     background: -webkit-linear-gradient(to bottom, #1D2671, #C33764);  /* Chrome 10-25, Safari 5.1-6 */
@@ -117,6 +121,7 @@ html body {
 
 #about-nav-menu {
     z-index: 1;
+    background-color: rgba(60, 60, 60, 0.95) !important;
 }
 
 #about-nav-menu.sticky {
@@ -125,6 +130,7 @@ html body {
     left: 0;
     right: 0;
     padding: 4px 0;
+    display: flex !important;
 }
 
 #about-nav a {    
@@ -170,7 +176,8 @@ html body {
 
 @media(max-width: 767px) {
     #projects h1,
-    #skills h1 {
+    #skills h1,
+    #contact h1 {
         font-size: 3em;
     }
     
