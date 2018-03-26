@@ -13,7 +13,6 @@ html body {
     color: #fff;
     font-family: 'Raleway';
     font-size: 1em;
-    text-shadow: 1px 2px 5px black !important;
 }
 
 .hidden {    
@@ -26,6 +25,10 @@ hr.section {
 
 hr.section.bottom-pad {
     margin-bottom: 40px;
+}
+
+#about {    
+    text-shadow: 1px 2px 5px black !important;
 }
 
 #skills,
@@ -378,7 +381,7 @@ hr.section.bottom-pad {
     border-radius: 5px;
     transition: all 0.2s;
     -webkit-transition: all 0.2s;
-    -moz-transition: all 0.2s;
+    -moz-transition: all 0.2s;    
 }
 
 /* FOOTER SECTION */
