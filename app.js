@@ -11,7 +11,7 @@ app.use(express.static(__dirname + "/public"));
 
 // For any path, render index page
 app.get("*", function(req, res) {
-    res.render("index");
+    res.render("index", {year: (new Date()).getFullYear()});
 });
 
 // Listen to router
