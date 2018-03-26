@@ -13,10 +13,19 @@ html body {
     color: #fff;
     font-family: 'Raleway';
     font-size: 1em;
+    text-shadow: 1px 2px 5px black !important;
 }
 
 .hidden {    
     display: none !important;
+}
+
+hr.section {
+    max-width: 150px;
+}
+
+hr.section.bottom-pad {
+    margin-bottom: 40px;
 }
 
 #skills,
@@ -26,7 +35,6 @@ html body {
     background-attachment: fixed;
     background-size: cover;
     background-repeat: no-repeat;
-    /* text-shadow: 1px 2px 8px black; */
 }
 
 @media screen and 
@@ -36,23 +44,8 @@ html body {
         font-size: 0.95em;
     }
 
-    #about {        
-        background: url(https://instagram.fmnl8-1.fna.fbcdn.net/vp/31a343ec666e7d2385aa154cb42e6f12/5B290154/t51.2885-15/s640x640/sh0.08/e35/22709042_1598615953538510_3130433952171425792_n.jpg);
-        background-position-y: 75%;
-        background-color: rgba(0, 0, 0, 0.65);
-        background-blend-mode: multiply;
-        background-size: cover;
-        background-attachment: fixed;
-        background-repeat: no-repeat;
-        text-shadow: 1px 2px 8px black;
-    }
-
     #about img {
         display: none;
-    }
-
-    #about h1 {        
-        text-shadow: 1px 2px 8px black;
     }
 
     #about .ui.divider {
@@ -64,6 +57,9 @@ html body {
     html body {        
         font-size: 0.95em;
     }
+}
+
+#about {    
 }
 
 #about .container {
@@ -260,6 +256,7 @@ html body {
 
 #skills #about-me img {
     border-radius: 10px;
+    border: 1px solid #fff;
     max-width: 100%;
     max-width: 150px;
     margin: 10px 1.6%;
@@ -363,7 +360,7 @@ html body {
 }
 
 .skill-item:nth-of-type(2n) {    
-    background: rgba(40, 10, 250, 0.4) !important;
+    background: rgba(180, 133, 255, 0.4) !important;
 }
 
 /* CONTACT SECTION */
