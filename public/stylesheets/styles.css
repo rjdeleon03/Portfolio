@@ -129,17 +129,12 @@ html body {
 }
 
 /* ====================
- * PROJECTS SECTION 
+ * PROJECTS/SKILLS COMMON SECTION 
  * ==================== */
 
  #projects, 
  #skills {
-    padding: 10% 0;
- }
- 
- .project-wrapper {
-     height: 100%;
-     max-height: 400px;
+    padding: 40px 0;
  }
  
  #projects h1,
@@ -170,6 +165,15 @@ html body {
     border-radius: 10px;
     max-width: 400px;
     margin: 0 auto;
+}
+
+/* ====================
+ * PROJECTS SECTION 
+ * ==================== */
+
+.project-wrapper {
+    height: 100%;
+    max-height: 400px;
 }
 
 .project-wrapper div {
@@ -203,6 +207,10 @@ html body {
     border: 1px solid white;
     background-color: rgba(10, 10, 10, 0.2);
 }
+
+/* ====================
+ * SKILLS SECTION 
+ * ==================== */
 
 #skills #skill-wrapper {
     border-right: 1px solid rgba(255, 255, 255, 0.8);
