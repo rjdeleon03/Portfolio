@@ -2,18 +2,7 @@ html, body {
     height: 100vh !important;
 }
 
-html body {    
-    background: -webkit-linear-gradient(to bottom, #1D2671, #C33764);  /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to bottom, #1D2671, #C33764); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-    background-attachment: fixed;
-    background-size: cover;
-    background-repeat: no-repeat;
-    color: #fff;
-    font-family: 'Raleway';
-    font-size: 1em;
-}
-
-#about {        
+html body {        
     background: url(https://images.unsplash.com/photo-1521295105158-fdc2a8225628?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=eb9798deb2e23486ef9500b392c142a5&auto=format&fit=crop&w=1355&q=80);
     background-position: center;
     background-color: rgba(0, 0, 0, 0.75);
@@ -21,7 +10,19 @@ html body {
     background-size: cover;
     background-attachment: fixed;
     background-repeat: no-repeat;
-    text-shadow: 1px 2px 8px black;
+    color: #fff;
+    font-family: 'Raleway';
+    font-size: 1em;
+}
+
+#skills,
+#contact {    
+    background: -webkit-linear-gradient(to bottom, #1D2671, #C33764);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to bottom, #1D2671, #C33764); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+    /* text-shadow: 1px 2px 8px black; */
 }
 
 @media screen and 
@@ -114,10 +115,6 @@ html body {
     border: 1px solid #fff;
 }
 
-#about-contact a {    
-    font-size: 1.4em;
-}
-
 #about-nav a {    
     font-family: 'Raleway';
 }
@@ -140,16 +137,18 @@ html body {
 }
 
 /* ====================
- * PROJECTS/SKILLS COMMON SECTION 
+ * PROJECTS/SKILLS/CONTACT COMMON SECTION 
  * ==================== */
 
- #projects, 
- #skills {
+#projects, 
+#skills,
+#contact {
     padding: 40px 0;
  }
- 
- #projects h1,
- #skills h1 {
+
+#projects h1,
+#skills h1,
+#contact h1 {
     font-size: 5.5vmin;
     font-family: 'Raleway';    
     font-weight: 300;
@@ -175,13 +174,10 @@ html body {
  * PROJECTS SECTION 
  * ==================== */
 
- #projects {
-    background: #cfcfcf;
-    color: #141414 !important;
-    font-weight: normal !important;
+#projects {
  }
  
- .project-wrapper {
+.project-wrapper {
     border: 1px solid #141414;
     border-radius: 10px;
     max-width: 400px;
@@ -196,7 +192,7 @@ html body {
 }
 
 .project-wrapper h3 {
-    font-weight: 400;
+    font-weight: 700;
     font-family: 'Raleway';
     font-size: 1.25em;
 }
@@ -218,7 +214,7 @@ html body {
 }
 
 #projects a:hover {
-    background-color: rgba(10, 10, 10, 0.2);
+    background-color: rgba(255, 255, 255, 0.75);
 }
 
 /* ====================
@@ -317,4 +313,22 @@ html body {
 
 .skill-item:nth-of-type(2n) {    
     background: rgba(40, 10, 250, 0.4);
+}
+
+/* CONTACT SECTION */
+
+#contact-items a:hover {
+    border: 1px solid #fff;
+}
+
+#contact-items a {    
+    color: #fff;
+    font-size: 2em;
+    margin: 4px;
+    padding: 10px;
+    border: 1px solid rgba(0, 0, 0, 0);
+    border-radius: 5px;
+    transition: all 0.2s;
+    -webkit-transition: all 0.2s;
+    -moz-transition: all 0.2s;
 }
