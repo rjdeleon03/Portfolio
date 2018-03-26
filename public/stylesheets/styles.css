@@ -92,14 +92,6 @@ html body {
     text-align: center;
 }
 
-#about img {
-    border-radius: 50%;
-    max-width: 100%;
-    padding-left: 27%;
-    padding-right: 27%;
-    margin: 0.6em 0;
-}
-
 #about a, 
 #about a:hover {
     color: #fff;
@@ -248,11 +240,38 @@ html body {
  * SKILLS SECTION 
  * ==================== */
 
+#skills #skills-container {
+    margin: 40px auto 0 auto;
+    max-width: 600px;
+}
+
 #skills #skill-wrapper {
     border-right: 1px solid rgba(255, 255, 255, 0.8);
 }
 
-#skills #exp-wrapper {
+#skills .grid {
+    margin: 10px 0;
+}
+
+#skills #about-me div {
+    margin: 0 auto;
+    display: inline-block;
+}
+
+#skills #about-me img {
+    border-radius: 10px;
+    max-width: 100%;
+    max-width: 150px;
+    margin: 10px 1.6%;
+    float: left;
+    width: 30%;
+}
+
+#skills #about-me.exp-wrapper {
+    text-align: center;
+}
+
+#skills #experience.exp-wrapper {
     border-left: 1px dashed rgba(255, 255, 255, 0.8);
 }
 
@@ -301,7 +320,7 @@ html body {
     padding: 3px 0;
 }
 
-.skill-item {
+#skills #skill-wrapper .skill-item {
     margin-left: auto;
     margin-right: 0;
     margin-bottom: 3px;
@@ -314,32 +333,32 @@ html body {
 }
 
 .skill-item.w30 {
-    width: 30%;
+    width: 30% !important;
 }
 .skill-item.w40 {
-    width: 40%;
+    width: 40% !important;
 }
 .skill-item.w50 {
-    width: 50%;
+    width: 50% !important;
 }
 .skill-item.w60 {
-    width: 60%;
+    width: 60% !important;
 }
 .skill-item.w70 {
-    width: 70%;
+    width: 70% !important;
 }
 .skill-item.w80 {
-    width: 80%;
+    width: 80% !important;
 }
 .skill-item.w90 {
-    width: 90%;
+    width: 90% !important;
 }
 .skill-item.w100 {
-    width: 100%;
+    width: 100% !important;
 }
 
 .skill-item:nth-of-type(2n) {    
-    background: rgba(40, 10, 250, 0.4);
+    background: rgba(40, 10, 250, 0.4) !important;
 }
 
 /* CONTACT SECTION */
