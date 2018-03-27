@@ -416,7 +416,8 @@ hr.section.bottom-pad {
 }
 
 .skill-item:nth-of-type(2n) {    
-    background: rgba(0, 53, 255, 0.43) !important;
+    background: rgba(107, 199, 127, 0.81) !important;
+    color: #000;
 }
 
 /* CONTACT SECTION */
