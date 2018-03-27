@@ -355,7 +355,7 @@ hr.section.bottom-pad {
 
 #skills li.top {
     list-style: none;
-    font-size: 0.98em;
+    font-size: 0.95em;
 }
 
 #skills li.top:first-of-type {
@@ -364,18 +364,18 @@ hr.section.bottom-pad {
 
 #skills li.bottom {
     list-style: none;
-    margin-bottom: 15px;
-    font-size: 0.98em;
+    margin-bottom: 13px;
+    font-size: 0.95em;
 }
 
 #skills li.bottom:last-of-type {
     margin-bottom: 0;
-    padding-bottom: 7px;
+    padding-bottom: 4px;
 }
 
 #skills li.main {
     font-size: 1.25em;
-    padding: 3px 0;
+    padding: 1px 0;
 }
 
 #skills #skill-wrapper .skill-item {
