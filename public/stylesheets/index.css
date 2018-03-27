@@ -383,6 +383,7 @@ hr.section.bottom-pad {
     margin-right: 0;
     margin-bottom: 3px;
     max-width: 100%;
+    min-width: 70px;
     width: 20%;
     background: rgba(30, 30, 30, 0.6);
     text-align: right;
