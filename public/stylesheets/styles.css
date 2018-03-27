@@ -451,3 +451,12 @@ hr.section.bottom-pad {
     font-size: 1.5em;
     font-weight: 300;
 }
+
+#footer a {
+    color: #aaa;
+}
+
+#footer a:hover {
+    color: #ddd;
+    text-decoration: underline;
+}
